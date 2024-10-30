@@ -1,0 +1,136 @@
+:root {
+  --primary-blue: #0098ff;
+  --dark-bg: #2c2c32;
+  --text-light: #ffffff;
+  --text-gray: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--text-light);
+  background: var(--dark-bg);
+}
+
+.header {
+  background: #25252b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #24242a 0%, #2c2c32 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.button {
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  background: var(--primary-blue);
+  color: var(--text-light);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text-light);
+  border: 1px solid var(--text-light);
+}
+
+.features {
+  padding: 4rem 2rem;
+  background: #25252b;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #2c2c32;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.feature-card p {
+  color: var(--text-gray);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+}
